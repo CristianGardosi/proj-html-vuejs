@@ -8,7 +8,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
+/* Typhography */
 h1 {
     font-weight: lighter;
     font-size: 70px;
@@ -19,10 +19,15 @@ h3 {
     font-size: 25px;
 }
 
+h4 {
+    font-weight: lighter;
+    font-size: 22px;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
-
+/* Buttons */
 .btn-blue {
     height: 50px;
     font-weight: bold;
@@ -33,8 +38,7 @@ h3 {
     color: #fff;
     cursor: pointer;
 }
-
-/* Classe per gestione generale dei link <a> */
+/* Links <a> */
 .links-style {
     text-decoration: none;
     color: black;
@@ -47,7 +51,7 @@ h3 {
 /* Navbar in apertura di pagina, selezione lingua, navlinks e icons per i social  */
 .navbar-links-section {
     display: flex;
-    padding: 20px 80px;
+    padding: 20px 50px;
     justify-content: space-between;
     border-bottom: 1px solid #f0f0f0;
 }
@@ -60,51 +64,51 @@ h3 {
     list-style: none;
 }
 
-/* Sezione di logo ricerca tramine searchbar e login */
+/* Sezione di logo / ricerca tramine searchbar / login */
 .searchbar-login-section {
     display: flex;
-    padding: 20px 80px;
+    padding: 20px 50px;
     align-items: center;
     justify-content: space-between;
 }
-
-
+/* Logo */
 .searchbar-login-section .logo img {
-    max-width: 200px;
+    max-width: 180px;
     margin-top: 10px;
 
 }
-
+/* Searchbar w/filtro per le categorie e links lavora con noi (tutor/aziende) */
 .searchbar-and-category-search {
-    flex-basis: 30%;
+    flex-basis: 65%;
+    margin-left: 20px;
 }
 
 .searchbar {
     position: relative;
-    width: 65%;
+    width: 40%;
     height: 50px;
-    margin-left: 10px;
+    margin:0 10px;
     font-size: 20px;
     padding: 0 20px;
     background: #f0f0f0;
     border: none;
 }
 
-.working-links {
-    flex-basis: 30%;
-    margin-left: 20px;
-}
-
-.working-links a {
+.searchbar-and-category-search a {
     padding: 0 10px;
 }
 
-.working-links a i {
+.searchbar-and-category-search a i {
     color: #1a5eca;
 }
 
+.category-filter {
+    color: #97a9ba;
+}
+/* Login / sign up */
 .login-or-signup a {
     color: #1a5eca;
+    padding: 0 10px;
 }
 
 .login-or-signup .signup-btn {
@@ -115,7 +119,7 @@ h3 {
 .jumbo-container {
     position: relative;
     width: 80vw;
-    height: 80vh;
+    height: 500px;
     margin: 80px auto;
 }
 
@@ -135,6 +139,69 @@ h3 {
     right: 0;
 }
 
+
+/* Light blue three boxes */
+.light-blue-boxes{
+    width: 70vw;
+    margin: 100px auto;
+}
+
+.light-blue-boxes-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.light-blue-box {
+    width: 32%;
+    padding: 20px;
+    background: #e4e8ed;
+    list-style: none;
+}
+
+.light-blue-box i {
+    font-size: 50px;
+    color: #1a5eca;
+}
+
+.light-blue-box h4 {
+    padding: 20px 0;
+}
+
+.light-blue-box p {
+    color: #97a9ba;
+}
+
+/* Courses photo area */
+.courses-photo-area{
+    position: relative;
+    width: 70vw;
+    margin: 50px auto;
+}
+
+.courses-photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.courses-photo-box {
+    position: relative;
+    width: 32%;
+    height: 150px;
+    margin-bottom: 50px;
+    background: #e4e8ed;
+    list-style: none;
+}
+
+.courses-photo-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.courses-photo-box small {
+    position: absolute;
+    right: 0;
+}
 
 
 
