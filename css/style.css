@@ -1,0 +1,41 @@
+/* !GENERAL STYLES & UTILITIES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* !LAYOUT STYLING */
+.navbar-links-section {
+    display: flex;
+    padding: 20px 80px;
+    justify-content: space-between;
+}
+
+.right-links-list {
+    display: flex;
+}
+
+.right-links-list li {
+    margin-left: 20px;
+    list-style: none;
+}
+
+.right-links-list li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
