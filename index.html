@@ -20,37 +20,78 @@
 <body>
     <!-- Vue app container -->
     <div id="white-ims">
-        <!-- Navbar in apertura di pagina, selezione lingua, navlinks e icons per i social -->
+        <!-- Header double section -->
         <header class="navbar-searchbar">
+            <!-- Navbar in apertura di pagina, selezione lingua, navlinks e icons per i social -->
             <nav class="navbar-links-section">
                 <div class="left-language-selection">
-                    <span>
-                    English 
-                    <i class="fas fa-chevron-down"></i>
-                    </span>
+                    <a class="links-style" href="#">
+                        <span>
+                        English 
+                        <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </a>
                 </div>
                 <div class="right-links-container">
                     <ul class="right-links-list">
                         <li>
-                            <a href="#">ok</a>
-                        </li>
-                        <li>
-                            <a href="#">ok</a>
-                        </li>
-                        <li>
-                            <a href="#">ok</a>
-                        </li>
-                        <li>
-                            <a href="#">ok</a>
+                            <a class="links-style" href="#">ok</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <hr>
+            <!-- Sezione di logo ricerca tramine searchbar e login -->
             <div class="searchbar-login-section">
+                <!-- Logo section -->
+                <div class="logo">
+                    <img src="./img/MasterStudy_logo.png" 
+                    alt="Logo">
+                </div>
+                <!-- Filtraggio per categorie e barra di ricerca -->
+                <div class="searchbar-and-category-search">
+                    <span class="uppercase category-filter">
+                        <i class="fas fa-bars"></i>
+                        category 
+                    </span>
+                    <input class="searchbar" type="text" placeholder="Search courses">
 
+                </div>
+                <!-- Link di lavora con noi e per le aziende -->
+                <div class="working-links">
+                    <a class="links-style" href="#">
+                        <i class="fas fa-bullhorn"></i>
+                        Became an instructor
+                    </a>
+                    <a class="links-style" href="#">
+                        <i class="fas fa-briefcase"></i>
+                        For enterprise
+                    </a>
+                </div>
+                <!-- Accedi o registrati, sezione di accesso -->
+                <div class="login-or-signup">
+                    <a class="links-style" href="#">
+                        <i class="fas fa-user"></i>
+                        Log in
+                    </a>
+                    <button class="btn-blue signup-btn">
+                        SIGN UP
+                    </button>
+                    <i class="fas fa-ribbon"></i>
+                </div>
             </div>
         </header>
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <div class="jumbo-container">
+                <div class="jumbo-text">
+                    <h1>Start investing in you</h1>
+                    <h3>With over 1220 courses in 18 subjects, you're guaranteed to find something that's right for you</h3>
+                    <button class="btn-blue uppercase">join for free!</button>
+                </div>
+                <div class="jumbo-image">
+                    <img src="./img/basepsd.png" alt="">
+                </div>
+        </div>
     </div>
 
     <!-- JS -->

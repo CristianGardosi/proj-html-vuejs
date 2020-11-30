@@ -9,13 +9,47 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+    font-weight: lighter;
+    font-size: 70px;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.btn-blue {
+    height: 50px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 30px;
+    background: #1a5eca;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Classe per gestione generale dei link <a> */
+.links-style {
+    text-decoration: none;
+    color: black;
+}
+
 
 
 /* !LAYOUT STYLING */
+/* *HEADER* */
+/* Navbar in apertura di pagina, selezione lingua, navlinks e icons per i social  */
 .navbar-links-section {
     display: flex;
     padding: 20px 80px;
     justify-content: space-between;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .right-links-list {
@@ -23,15 +57,83 @@ body {
 }
 
 .right-links-list li {
-    margin-left: 20px;
     list-style: none;
 }
 
-.right-links-list li a {
-    text-decoration: none;
-    color: black;
+/* Sezione di logo ricerca tramine searchbar e login */
+.searchbar-login-section {
+    display: flex;
+    padding: 20px 80px;
+    align-items: center;
+    justify-content: space-between;
 }
 
+
+.searchbar-login-section .logo img {
+    max-width: 200px;
+    margin-top: 10px;
+
+}
+
+.searchbar-and-category-search {
+    flex-basis: 30%;
+}
+
+.searchbar {
+    position: relative;
+    width: 65%;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 0 20px;
+    background: #f0f0f0;
+    border: none;
+}
+
+.working-links {
+    flex-basis: 30%;
+    margin-left: 20px;
+}
+
+.working-links a {
+    padding: 0 10px;
+}
+
+.working-links a i {
+    color: #1a5eca;
+}
+
+.login-or-signup a {
+    color: #1a5eca;
+}
+
+.login-or-signup .signup-btn {
+    margin: 0 10px;
+}
+
+/* Jumbotron */
+.jumbo-container {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    margin: 80px auto;
+}
+
+.jumbo-text {
+    position: absolute;
+    width: 50%;
+    top: 15%;
+    left: 0;
+}
+
+.jumbo-text h3 {
+    padding: 20px 0;
+}
+
+.jumbo-image {
+    position: absolute;
+    right: 0;
+}
 
 
 
