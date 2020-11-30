@@ -27,7 +27,7 @@ h3 {
 
 h4 {
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .uppercase {
@@ -68,6 +68,19 @@ h4 {
 
 .right-links-list li {
     list-style: none;
+    padding-left: 15px;
+}
+
+.right-links-list li a {
+    color: #6f6f6f;
+}
+
+.right-links-list li a:hover {
+    color: #000;
+}
+
+.right-links-list .first-social {
+    padding-left: 30px;
 }
 
 /* Sezione di logo / ricerca tramine searchbar / login */
@@ -90,7 +103,6 @@ h4 {
 }
 
 .searchbar {
-    position: relative;
     width: 40%;
     height: 50px;
     margin:0 10px;
@@ -98,6 +110,11 @@ h4 {
     padding: 0 20px;
     background: #f0f0f0;
     border: none;
+}
+
+.searchbar-and-category-search .search-icon {
+    bottom: 20px;
+    right: 200px;
 }
 
 .searchbar-and-category-search a {
@@ -109,7 +126,7 @@ h4 {
 }
 
 .category-filter {
-    color: #97a9ba;
+    color: #b8b8b8;
 }
 /* Login / sign up */
 .login-or-signup a {
@@ -119,6 +136,19 @@ h4 {
 
 .login-or-signup .signup-btn {
     margin: 0 10px;
+}
+
+@media screen and (min-width: 1800px) {
+    .searchbar-login-section .logo img {
+        max-width: 300px;
+        margin-top: 10px;
+    
+    }
+
+    .searchbar {
+        width: 50%;
+        margin-right: 50px;
+    }
 }
 
 /* Jumbotron */
@@ -160,7 +190,7 @@ h4 {
 .light-blue-box {
     width: 32%;
     padding: 20px;
-    background: #e4e8ed;
+    background: #f0f4fa;
     list-style: none;
 }
 

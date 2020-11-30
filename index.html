@@ -34,8 +34,54 @@
                 </div>
                 <div class="right-links-container">
                     <ul class="right-links-list">
+                        <!-- Links -->
+                        <li v-for="item in navbarLinks">
+                            <a class="links-style" href="#">
+                                {{ item.link }}
+                            </a>
+                        </li>
+                        <!-- Social -->
                         <li>
-                            <a class="links-style" href="#">ok</a>
+                            <a href="#">
+                                <i class="fab fa-instagram first-social">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-behance">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-dribbble">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-git">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-pinterest">
+                                </i>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -55,28 +101,16 @@
                         <i class="fas fa-bars"></i>
                         category 
                     </span>
-                    <input class="searchbar" type="text" placeholder="Search courses">
-                  
+                    <input class="searchbar" type="text" placeholder="Search courses and press enter!">
                     <a class="links-style" href="#">
                         <i class="fas fa-bullhorn"></i>
-                        Became an instructor
+                        Become an instructor
                     </a>
                     <a class="links-style" href="#">
                         <i class="fas fa-briefcase"></i>
                         For enterprise
                     </a>
                 </div>
-                <!-- Link di lavora con noi e per le aziende -->
-                <!-- <div class="working-links">
-                    <a class="links-style" href="#">
-                        <i class="fas fa-bullhorn"></i>
-                        Became an instructor
-                    </a>
-                    <a class="links-style" href="#">
-                        <i class="fas fa-briefcase"></i>
-                        For enterprise
-                    </a>
-                </div> -->
                 <!-- Accedi o registrati, sezione di accesso -->
                 <div class="login-or-signup">
                     <a class="links-style" href="#">
@@ -92,8 +126,6 @@
         </header>
         <!-- Jumbotron -->
         <div class="jumbotron">
-
-
             <div class="jumbo-container">
                 <div class="jumbo-text">
                     <h1>Start investing in you</h1>
@@ -170,6 +202,7 @@
                 </div>
             </div>
         </section>
+        <!-- Recent courses -->
     <!-- JS -->
     <script src="./js/script.js"></script>
 
