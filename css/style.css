@@ -14,6 +14,12 @@ h1 {
     font-size: 70px;
 }
 
+h2 {
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+
 h3 {
     font-weight: lighter;
     font-size: 25px;
@@ -203,6 +209,30 @@ h4 {
     right: 0;
 }
 
+/* Limitless banner */
+.limitless-banner {
+    width: 100vw;
+    background-image: url('../img/Untitled-1-1-1-1-1.png');
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.limitless-content {
+    position: relative;
+    width: 70vw;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.limitless-content .limitless-text {
+    position: absolute;
+    top: 20%;
+    width: 50%;
+}
+
+.limitless-content .limitless-text h3 {
+    margin: 20px 0;
+}
 
 
 
