@@ -59,10 +59,11 @@ small {
     background: #1a5eca;
     color: #fff;
     cursor: pointer;
-    transition: background .2s;
+    transition: .2s;
 }
 
 .btn-blue:hover{
+    transform: scale(1.1);
     background: #4bd78a;
 }
 /* Links <a> */
@@ -412,3 +413,41 @@ small {
     left: 10px;
     width: 50px;
 }
+/* Big proud banner */
+.proud-banner {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    background:#f0f4fa;
+    margin-bottom: 50px;
+}
+.proud-banner img {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.proud-content .proud-intro-text h2 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.proud-content .proud-numbers .proud-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.proud-numbers .proud-list .proud-box {
+    list-style: none;
+    flex-basis: 150px;
+    margin: 0 50px;
+}
+
+
+
+
+
