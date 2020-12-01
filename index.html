@@ -21,9 +21,10 @@
     <!-- Vue app container -->
     <div id="white-ims">
         <!-- Header double section -->
-        <header class="navbar-searchbar">
-            <!-- Navbar in apertura di pagina, selezione lingua, navlinks e icons per i social -->
+        <header class="header">
+            <!-- Navbar in apertura di pagina, selezione lingua, navlinks di navigazione e icons per i social -->
             <nav class="navbar-links-section">
+                <!-- Left -->
                 <div class="left-language-selection">
                     <a class="links-style" href="#">
                         <span>
@@ -32,9 +33,10 @@
                         </span>
                     </a>
                 </div>
+                <!-- Right -->
                 <div class="right-links-container">
                     <ul class="right-links-list">
-                        <!-- Links -->
+                        <!-- Links collegati a array creato in VUEJS (navbarLinks) -->
                         <li v-for="item in navbarLinks">
                             <a class="links-style" href="#">
                                 {{ item.link }}
@@ -42,43 +44,43 @@
                         </li>
                         <!-- Social -->
                         <li>
-                            <a href="#">
+                            <a class="links-style" href="#">
                                 <i class="fab fa-instagram first-social">
                                 </i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="links-style" href="#">
                                 <i class="fab fa-twitter">
                                 </i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="links-style" href="#">
                                 <i class="fab fa-behance">
                                 </i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="links-style" href="#">
                                 <i class="fab fa-dribbble">
                                 </i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="links-style" href="#">
                                 <i class="fab fa-git">
                                 </i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="links-style" href="#">
                                 <i class="fab fa-linkedin">
                                 </i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="links-style" href="#">
                                 <i class="fab fa-pinterest">
                                 </i>
                             </a>
@@ -86,7 +88,7 @@
                     </ul>
                 </div>
             </nav>
-            <!-- Sezione di logo ricerca tramine searchbar e login -->
+            <!-- Logo, ricerca tramine searchbar e login -->
             <div class="searchbar-login-section">
                 <!-- Logo section -->
                 <div class="logo">
@@ -96,12 +98,14 @@
                     </a>
                 </div>
                 <!-- Filtraggio per categorie e barra di ricerca + lavora con noi (tutor/aziende) -->
-                <div class="searchbar-and-category-search">
-                    <span class="uppercase category-filter">
-                        <i class="fas fa-bars"></i>
-                        category 
-                    </span>
-                    <input class="searchbar" type="text" placeholder="Search courses and press enter!">
+                <div class="searchbar-and-work">
+                        <span class="uppercase category-filter">
+                            <i class="fas fa-bars"></i>
+                            category 
+                        </span>
+                    <input class="searchbar" 
+                    type="text" 
+                    placeholder="Search courses and press enter!">
                     <a class="links-style" href="#">
                         <i class="fas fa-bullhorn"></i>
                         Become an instructor
@@ -120,7 +124,9 @@
                     <button class="btn-blue signup-btn">
                         SIGN UP
                     </button>
-                    <i class="fas fa-ribbon"></i>
+                    <a href="#">
+                        <i class="far fa-flag"></i>
+                    </a>
                 </div>
             </div>
         </header>
@@ -135,25 +141,15 @@
                 <div class="jumbo-image">
                     <img src="./img/basepsd.png" alt="">
                 </div>
+            </div>
         </div>
-
         <!-- Light blue three boxes -->
         <section class="light-blue-boxes">
             <ul class="light-blue-boxes-list">
-                <li class="light-blue-box">
+                <li v-for="content in lightBlueBoxesContents" class="light-blue-box">
                     <i class="fas fa-globe-europe"></i>
-                    <h4>Worldwide recognize</h4>
-                    <p>You can use your certificate all around the world and also in most popular universities and companies</p>
-                </li>
-                <li class="light-blue-box">
-                    <i class="fas fa-tv"></i>
-                    <h4>Mostly online learning</h4>
-                    <p>Master study online certificates in a range of specialized areas</p>
-                </li>
-                <li class="light-blue-box">    
-                    <i class="fas fa-calendar-check"></i>
-                    <h4>Graduate in as a little as one year</h4>  
-                    <p>Online post graduate certificates are a popular way to develope your porfessional qualifications</p>         
+                    <h4>{{ content.title }}</h4>
+                    <p>{{ content.description }}</p>
                 </li>
             </ul>
         </section>
@@ -203,7 +199,53 @@
             </div>
         </section>
         <!-- Recent courses -->
-    <!-- JS -->
+        <section class="recent-courses">
+            <div class="recent-courses-container">
+                <div class="recent-courses-intro-menu">
+                    <h2>Recent courses</h2>
+                    <!-- Courses filter links -->
+                    <div class="filtered-courses">
+                        <ul class="filtered-links">
+                            <li v-for="name in recentCourses">
+                                <a href="#">
+                                    {{ name.filter }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="courses-boxes">
+                    <ul class="courses-boxes-list">
+                        <li v-for="element in recentCourseBox" class="course-box">
+                            <div class="course-image">
+                                <img 
+                                :src="element.photo" alt="">
+                            </div>
+                            <div class="course-main-info">
+                                <small>
+                                    <a href="">
+                                        {{ element.type }}
+                                    <i class="fas fa-caret-right"></i>
+                                    </a>
+                                </small>
+                                <p>{{ element.name }}</p>
+                            </div>
+                            <div class="course-price-rating">
+                                <small>{{ element.duration }}</small>
+                                <img :src="element.stars" alt="">
+                                <p>{{ element.price }}</p>
+                            </div>
+                        </li>                   
+                    </ul>
+                    <div class="show-more-button tac">
+                        <button class="btn-blue ">
+                            SHOW MORE
+                        </button>
+                    </div>
+                </div>
+                <!-- Boxes -->
+            </div>
+        </section>    <!-- JS -->
     <script src="./js/script.js"></script>
 
 </body>
