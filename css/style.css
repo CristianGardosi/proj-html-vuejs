@@ -26,7 +26,7 @@ h2 {
 
 h3 {
     font-weight: lighter;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 h4 {
@@ -321,10 +321,6 @@ small {
     margin-bottom: 50px;
 }
 
-.recent-courses-intro-menu {
-    text-align: center;
-}
-
 .filtered-courses .filtered-links {
     display: flex;
     justify-content: center;
@@ -358,6 +354,7 @@ small {
     flex-basis: 200px;
     list-style: none;
     margin: 10px;
+    background: #fff;
     border: 1px solid #6f6f6f;
     cursor: pointer;
     transition: .2s;
@@ -485,7 +482,78 @@ small {
     border: none;
     cursor: pointer;
 }
+/* Popular courses area */
+.popular-courses-container {
+    width: 100vw;
+    background:#f0f4fa;
+}
 
+.popular-courses-intro-menu h2 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.popular-courses-intro-menu p {
+    padding-bottom: 30px;
+}
+
+.popular-back-front {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.popular-back-front button {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    transition: .2s
+}
+
+.popular-back-front button:hover {
+    background: #1a5eca;
+    color: #fff;
+}
+/* White instructor/business boxes */
+.instructor-business-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.white-instructor,
+.white-business {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 650px;
+    height: 300px;
+    margin: 50px 20px;
+    border: 1px solid #6f6f6f;
+}
+
+.white-instructor img,
+.white-business img {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 200px;
+    transform: translateY(-50%);
+}
+
+.white-instructor .white-text,
+.white-business .white-text {
+    flex-basis: 60%;
+    padding-right: 50px;
+}
+
+.white-instructor .white-text p,
+.white-business .white-text p {
+    padding: 20px 0;
+}
 
 
 

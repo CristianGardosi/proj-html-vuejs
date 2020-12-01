@@ -201,12 +201,13 @@
         <!-- Recent courses -->
         <section class="recent-courses">
             <div class="recent-courses-container">
-                <div class="recent-courses-intro-menu">
+                <div class="recent-courses-intro-menu tac">
                     <h2>Recent courses</h2>
                     <!-- Courses filter links -->
                     <div class="filtered-courses">
                         <ul class="filtered-links">
-                            <li v-for="name in recentCourses">
+                            <li v-for="name in recentCoursesCategory"
+                            @click="filteredGenres">
                                 <a href="#">
                                     {{ name.filter }}
                                 </a>
@@ -243,7 +244,6 @@
                         </button>
                     </div>
                 </div>
-                <!-- Boxes -->
             </div>
         </section>  
         <!-- Big banner proud -->
@@ -286,6 +286,67 @@
                 <div class="newsletter-form">
                     <input type="text" placeholder="Insert your Email here!">
                     <button class="uppercase">subscribe</button>
+                </div>
+            </div>
+        </section>
+        <!-- Popular courses section -->
+        <section class="popular-courses">
+            <div class="popular-courses-container">
+                <div class="popular-courses-intro-menu tac">
+                    <h2>Popular courses</h2>
+                    <p>Discover our most popular courses for self learning</p>
+                </div>
+                <div class="courses-boxes">
+                    <ul class="courses-boxes-list">
+                        <li v-for="element in popularCourseBox" class="course-box">
+                            <div class="course-image">
+                                <img 
+                                :src="element.photo" alt="">
+                            </div>
+                            <div class="course-main-info">
+                                <small>
+                                    <a href="">
+                                        {{ element.type }}
+                                    <i class="fas fa-caret-right"></i>
+                                    </a>
+                                </small>
+                                <p>{{ element.name }}</p>
+                            </div>
+                            <div class="course-price-rating">
+                                <small>{{ element.duration }}</small>
+                                <img :src="element.stars" alt="">
+                                <p>{{ element.price }}</p>
+                            </div>
+                        </li>                   
+                    </ul>
+                </div>
+                <div class="popular-back-front">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <button><i class="fas fa-chevron-right"></i></button>
+                </div>
+        </section>
+        <!-- White instructor/business boxes -->
+        <section class="instructor-business">
+            <div class="instructor-business-container">
+                <div class="white-instructor">
+                    <img src="./img/image_box_1-221x231.png" alt="">
+                    <div class="white-text">
+                        <h3>Become an instructor</h3>
+                        <p>Teach what you love with a personal course</p>
+                        <button class="btn-blue uppercase">
+                            Teach now
+                        </button>
+                    </div>
+                </div>
+                <div class="white-business">
+                    <img src=./img/image_box_2-234x231.png alt="">
+                    <div class="white-text">
+                        <h3>Setup for business</h3>
+                        <p>Get unlimited access to 2,500 of Udemy's top courses for your team</p>
+                        <button class="btn-blue uppercase">
+                            doing business
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>

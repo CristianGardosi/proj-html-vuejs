@@ -7,6 +7,7 @@ const iAccademy = new Vue ({
     el: '#white-ims',
 
     data: {
+
         // Link navbar
         navbarLinks: [
             {
@@ -47,7 +48,7 @@ const iAccademy = new Vue ({
             },
         ],
         // Recent courses filter researc
-        recentCourses: [
+        recentCoursesCategory: [
             {
                 filter: 'All categories'
             },
@@ -70,6 +71,8 @@ const iAccademy = new Vue ({
                 filter: 'Software developement'
             }
         ],
+        // Categoria selezionata al caricamento della pagina (= mostra tutti i video)
+        actualCourseGenre: 'All categories',
         // Recent courses box content
         recentCourseBox: [
             {
@@ -136,7 +139,57 @@ const iAccademy = new Vue ({
                 price: '60$',
                 genre: 'Photography'
             }
+        ],
+        popularCourseBox: [
+            {
+                photo: './img/photo-1496307042754-b4aa456c4a2d-272x161.jpeg',
+                type: 'Electronic',
+                name: 'How to be a DJ? Make electronic music',
+                duration: '8 hours',
+                price: '49$',
+                genre: 'Music'
+            },
+            {
+                photo: './img/photo-1475452779376-caebfb988090-272x161.jpeg',
+                type: 'Bicycling',
+                name: 'Road bike manual on how to be a champion',
+                duration: '6 hours',
+                price: '20$',
+                genre: 'Exsercise'
+            },
+            {
+                photo: './img/12345-1-272x161.png',
+                type: 'Nvidia',
+                name: 'Nvidia and EU4 Technologies practice',
+                duration: '6 hours',
+                price: 'Free',
+                genre: 'Photography'
+            },
+            {
+                photo: './img/cathryn-lavery-67852-unsplash-272x161.jpg',
+                type: 'Art',
+                name: 'Make your concept right and beautiful',
+                duration: '',
+                stars: './img/3star-solid.png',
+                price: '70$',
+                genre: 'Art'
+            },
+            {
+                photo: './img/cristian-grecu-762012-unsplash-min-scaled-272x161.jpg',
+                type: 'Documentary',
+                name: 'How to make beautiful Landscape photos?',
+                duration: '6 hours',
+                price: '60$',
+                genre: 'Photography'
+            }
         ]
+    },
+    methods: {
+        filteredGenres() {
+            console.log('OK')
+        }
     }
-
  }); // <-- END VUE
+
+
+ 
