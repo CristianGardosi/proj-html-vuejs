@@ -32,21 +32,6 @@ const iAccademy = new Vue ({
                 link: 'Demos'
             }
         ],
-        // Light blue text boxes contents
-        lightBlueBoxesContents: [
-            {
-                title: 'Worldwide recognize',
-                description: 'You can use your certificate all around the world and also in most popular universities and companies'
-            },
-            {
-                title: 'Mostly online learning',
-                description: 'Master study online certificates in a range of specialized areas'
-            },
-            {
-                title: 'Graduate in as a little as one year',
-                description: 'Online post graduate certificates are a popular way to develope your porfessional qualifications'
-            },
-        ],
         // Recent courses filter researc
         recentCoursesCategory: [
             {
@@ -190,6 +175,5 @@ const iAccademy = new Vue ({
         }
     }
  }); // <-- END VUE
-
 
  

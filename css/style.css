@@ -3,6 +3,7 @@
 /**************************************************\
 
 /* !GENERAL STYLES & UTILITIES */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -81,8 +82,8 @@ small {
     text-align: center;
 }
 
-
 /* !LAYOUT STYLING */
+
 /* *HEADER* */
 /* Navbar in apertura di pagina, selezione lingua, navlinks e icons per i social  */
 .navbar-links-section {
@@ -182,7 +183,7 @@ small {
     margin: 0 20px;
 }
 
-/*Gestione media query +1800px */
+/* ?Gestione media query +1800px */
 /* Ingrandimento logo e searchbar allargata */
 @media screen and (min-width: 1800px) {
     .searchbar-login-section .logo img {
@@ -196,8 +197,9 @@ small {
         margin-right: 50px;
     }
 }
+/** MAIN **/
 
-/* Jumbotron */
+/** Jumbotron **/
 .jumbo-container {
     position: relative;
     width: 80vw;
@@ -222,7 +224,7 @@ small {
 }
 
 
-/* Light blue three boxes */
+/** Light blue three boxes **/
 .light-blue-boxes{
     width: 70vw;
     margin: 100px auto;
@@ -253,7 +255,7 @@ small {
     color: #97a9ba;
 }
 
-/* Courses photo area */
+/** Courses photo area **/
 .courses-photo-area{
     position: relative;
     width: 70vw;
@@ -291,7 +293,7 @@ small {
     right: 0;
 }
 
-/* Limitless banner */
+/** Limitless banner **/
 .limitless-banner {
     width: 100vw;
     background-image: url('../img/Untitled-1-1-1-1-1.png');
@@ -315,7 +317,8 @@ small {
 .limitless-content .limitless-text h3 {
     margin: 20px 0;
 }
-/* Recent courses */
+
+/** Recent courses **/
 .recent-courses-container {
     padding: 0 50px;
     margin-bottom: 50px;
@@ -410,7 +413,8 @@ small {
     left: 10px;
     width: 50px;
 }
-/* Big proud banner */
+
+/** Big proud banner **/
 .proud-banner {
     position: relative;
     width: 100vw;
@@ -442,7 +446,8 @@ small {
     flex-basis: 150px;
     margin: 0 50px;
 }
-/* Newsletter section */
+
+/** Newsletter section **/
 .newsletter-container {
     display: flex;
     justify-content: space-evenly;
@@ -482,7 +487,8 @@ small {
     border: none;
     cursor: pointer;
 }
-/* Popular courses area */
+
+/** Popular courses area **/
 .popular-courses-container {
     width: 100vw;
     background:#f0f4fa;
@@ -515,7 +521,8 @@ small {
     background: #1a5eca;
     color: #fff;
 }
-/* White instructor/business boxes */
+
+/** White instructor/business boxes **/
 .instructor-business-container {
     display: flex;
     justify-content: center;
@@ -555,6 +562,40 @@ small {
     padding: 20px 0;
 }
 
+/** Come as you are section **/
+.caya-container { 
+    position: relative;
+    height: 650px;
+    background-image: url('../img/brooke-cagle-224821-unsplash-1-1920x700.jpg');
+    background-size: cover;
+}
+
+.caya-text-box {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    width: 700px;
+    height: 500px;
+    padding: 100px;
+    background: #fff;
+}
+
+.caya-text-box ::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    right: -1%;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.caya-text-box p {
+    padding: 30px 0;
+}
 
 
 
