@@ -167,6 +167,26 @@ const iAccademy = new Vue ({
                 price: '60$',
                 genre: 'Photography'
             }
+        ],
+        footerPages: [
+            {
+                page: 'Blog'
+            },
+            {
+                page: 'Home'
+            },
+            {
+                page: 'Shorcuts'
+            },
+            {
+                page: 'Courses'
+            },
+            {
+                page: 'Membership'
+            },
+            {
+                page: 'Typhography'
+            },
         ]
     },
     methods: {

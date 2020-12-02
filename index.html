@@ -20,8 +20,8 @@
 <body>
     <!-- Vue app container -->
     <div id="white-ims">
-
         <!-- Header double section -->
+        <!-- !HEADER -->
         <header class="header">
             <!-- Navbar in apertura di pagina, selezione lingua, navlinks di navigazione e icons per i social -->
             <nav class="navbar-links-section">
@@ -131,10 +131,10 @@
                 </div>
             </div>
         </header>
-
+        <!-- !MAIN -->
         <main>
         <!-- Jumbotron -->
-            <div class="jumbotron">
+            <section class="jumbotron">
                 <div class="jumbo-container">
                     <div class="jumbo-text">
                         <h1>Start investing in you</h1>
@@ -145,7 +145,7 @@
                         <img src="./img/basepsd.png" alt="">
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- Light blue three boxes -->
             <section class="light-blue-boxes">
                 <ul class="light-blue-boxes-list">
@@ -392,11 +392,85 @@
                 </div>
             </section>
         </main>
+        <!-- !FOOTER -->
         <footer>
-
+            <div class="footer-container">
+                <div class="footer-box">
+                    <div class="footer-about">
+                        <h3>About</h3>
+                        <p>Masterstudy is Education WordPress theme featured by Learning Management System (LMS) for online education.
+                        Developed by StylemixThemes.</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <div class="footer-contact">
+                        <h3>Contact</h3>
+                        <p>USA, Callifornia 20, First Avenue, Callifornia</p>
+                        <p class="tel-numbers">Tel.: +1 212 458 300 32</p>
+                        <p>Fax: +1 212 375 24 14</p>
+                        <small>
+                            <a href="#">info@masterstudy.com</a>
+                        </small>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <div class="footer-pages">
+                        <h3>Pages</h3>
+                        <ul>
+                            <li v-for="item in footerPages">
+                                <a href="#">{{ item.page }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <div class="footer-blog">
+                        <h3>Blog</h3>
+                        <div class="blog-article">
+                            <img src="./img/photo-1490376840453-5f616fbebe5b-122x120.jpeg" alt="">
+                            <div class="blog-article-text">
+                                <a href="#">
+                                    <p>Our main target is to "Developing Yourself as a Leader"</p>
+                                    <small>
+                                       - August 9, 2018
+                                    </small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blog-article">
+                            <a href="#">
+                                <img src="./img/photo-1517520287167-4bbf64a00d66-122x120.jpeg" alt="">
+                            <div class="blog-article-text">
+                                <a href="#">
+                                    <p>Our main target is to "Developing Yourself as a Leader"</p>
+                                    <small>
+                                       - September 13, 2018
+                                    </small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
-        
-        
+    </div>
     
     
     <!-- JS -->

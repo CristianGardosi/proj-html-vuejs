@@ -198,6 +198,7 @@ small {
         margin-right: 50px;
     }
 }
+
 /** MAIN **/
 
 /** Jumbotron **/
@@ -400,7 +401,6 @@ small {
     z-index: 1;
 }
 
-
 .course-box .course-image {
     width: 100%; 
 }
@@ -495,8 +495,15 @@ small {
     position: relative;
     width: 70%;
     height: 50px;
+    border: none;
     font-size: 20px;
     padding: 10px;
+    outline: none;
+    transition: .2s;
+}
+
+.newsletter-container .newsletter-form input:hover {
+    background: #F3F3F3;
 }
 
 .newsletter-container .newsletter-form button {
@@ -507,6 +514,11 @@ small {
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: .2s;
+}
+
+.newsletter-container .newsletter-form button:hover {
+    transform: scale(1.2);
 }
 
 /** Popular courses area **/
@@ -618,5 +630,91 @@ small {
     padding: 30px 0;
 }
 
+/** FOOTER **/
+
+.footer-container {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-box {
+    width: 250px;
+    margin: 20px;
+}
+
+.footer-box h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-box .footer-about ul li  {
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.footer-box .footer-about ul li a {
+    font-size: 20px;
+    color: #6f6f6f;
+    transition: color .2s;
+}
+
+.footer-box .footer-about ul li a:hover {
+    color: #000;
+}
+
+.footer-box .footer-contact .tel-numbers{
+    padding: 10px 0;
+}
+
+.footer-box .footer-contact a {
+    color: #6f6f6f;
+}
+
+.footer-box .footer-pages {
+    height: 100px;
+}
+
+.footer-box .footer-pages ul li  {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.footer-box .footer-pages ul li a {
+    list-style: none;
+    color: #6f6f6f;
+}
+
+.footer-box .footer-pages ul li a:hover {
+    color: #000;
+}
+
+.footer-box .footer-blog .blog-article {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-box .footer-blog .blog-article img {
+    padding-right: 20px;
+}
+
+.footer-box .footer-blog .blog-article p {
+    font-weight: bold;
+}
+
+
+.footer-box .footer-blog .blog-article p,
+.footer-box .footer-blog .blog-article small {
+    color: #6f6f6f;
+    transition: color .2s;
+}
+
+.footer-box .footer-blog .blog-article p:hover,
+.footer-box .footer-blog .blog-article small:hover {
+    color: #000;
+}
 
 
