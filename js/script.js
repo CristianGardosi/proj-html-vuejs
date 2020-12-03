@@ -97,7 +97,8 @@ const iAccademy = new Vue ({
                 type: 'Communication',
                 name: 'Design instruments for communication',
                 duration: '5 hours',
-                price: '70$'
+                price: '70$',
+                genre: 'Art'
             },
             {
                 photo: './img/12345-1-272x161.png',
@@ -117,13 +118,13 @@ const iAccademy = new Vue ({
                 genre: 'Art'
             },
             {
-                photo: './img/cristian-grecu-762012-unsplash-min-scaled-272x161.jpg',
+                photo: './img/jakob-owens-198234-unsplash-min-1-272x161.png',
                 type: 'Documentary',
-                name: 'How to make beautiful Landscape photos?',
+                name: 'How to make videos for TV programs',
                 duration: '6 hours',
-                price: '60$',
+                price: '90$',
                 genre: 'Photography'
-            }
+            }            
         ],
         popularCourseBox: [
             {
@@ -190,10 +191,25 @@ const iAccademy = new Vue ({
         ]
     },
     methods: {
-        filteredGenres() {
-            console.log('OK')
-        }
     }
  }); // <-- END VUE
+
+
+
+//  Gestione animazione JUMBOTRON
+let controller;
+function animateJumbo() {
+    // Inizializzazione controller
+    controller = new ScrollMagic.Controller()
+    // Selezione elementi DOM necessari per l'animazione
+        const jumboText = document.querySelector('.jumbo-text');
+        const jumboImg = document.querySelector('.jumbo-img');
+        const slideTimeline = gsap.timeline({
+            defaults: { duration: 1, ease: 'slow' }
+        });
+        slideTimeline.fromTo(jumboImg, { x: '150%' }, { x: '0%' });
+        slideTimeline.fromTo(jumboText, { x: '-150%' }, { x: '0%'}, '-=1');
+}
+animateJumbo();
 
  
