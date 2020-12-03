@@ -198,18 +198,20 @@ const iAccademy = new Vue ({
 
 //  Gestione animazione JUMBOTRON
 let controller;
-function animateJumbo() {
+function animateHeaderJumbo() {
     // Inizializzazione controller
     controller = new ScrollMagic.Controller()
     // Selezione elementi DOM necessari per l'animazione
+        const header = document.querySelector('header');
         const jumboText = document.querySelector('.jumbo-text');
         const jumboImg = document.querySelector('.jumbo-img');
         const slideTimeline = gsap.timeline({
             defaults: { duration: 1, ease: 'slow' }
         });
+        slideTimeline.fromTo(header, { y: '-150%' }, { y: '0%' });
         slideTimeline.fromTo(jumboImg, { x: '150%' }, { x: '0%' });
         slideTimeline.fromTo(jumboText, { x: '-150%' }, { x: '0%'}, '-=1');
 }
-animateJumbo();
+animateHeaderJumbo();
 
  
